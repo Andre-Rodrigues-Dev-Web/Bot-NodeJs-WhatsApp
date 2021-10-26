@@ -1,8 +1,8 @@
-import fs from 'fs'
-import qrcode from 'qrcode-terminal'
-import { Client, MessageMedia } from 'whatsapp-web.js'
-import express from 'express'
-import cors from 'cors';
+const fs = require ('fs');
+const qrcode = require('qrcode-terminal');
+const { Client, MessageMedia } = require('whatsapp-web.js');
+const cors = require('cors');
+const express = express();
 
 // Inicializamos el bot
 const SESSION_FILE_PATH = './session.json';
