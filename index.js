@@ -2,7 +2,7 @@ const fs = require ('fs');
 const qrcode = require('qrcode-terminal');
 const { Client, MessageMedia } = require('whatsapp-web.js');
 const cors = require('cors');
-const express = express();
+const express = require('express');
 
 // Inicializamos el bot
 const SESSION_FILE_PATH = './session.json';
@@ -29,7 +29,6 @@ const withSession = () => {
  */
 const withOutSession = () => {
     ws = new Client();
-    // Geramos o QRCODE no Terminal
     ws.on('qr', qr => { qrcode.generate(qr, { small: true }); });
     ws.on('ready', () => console.log('Cliente está pronto!'));
     ws.on('auth_failure', () => {
