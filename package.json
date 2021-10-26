@@ -18,7 +18,10 @@
   },
   "homepage": "https://github.com/Andre-Rodrigues-Dev-Web/Bot-NodeJs-WhatsApp#readme",
   "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
     "qrcode-terminal": "^0.12.0",
+    "save": "^2.4.0",
     "whatsapp-web.js": "^1.14.1"
   }
 }
